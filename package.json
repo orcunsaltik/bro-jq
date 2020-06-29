@@ -1,0 +1,61 @@
+{
+  "name": "bro-jq",
+  "version": "1.0.2",
+  "description": "A Javascript Library like jQuery",
+  "keywords": [
+    "dom",
+    "client",
+    "browser",
+    "javascript",
+    "jQuery"
+  ],
+  "scripts": {
+    "start": "gulp watch",
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "build:amd": "gulp build:amd",
+    "build:dev": "gulp build:dev",
+    "build:esm": "gulp build:esm",
+    "build:pro": "gulp build:pro",
+    "clean:amd": "gulp clean:amd",
+    "clean:dev": "gulp clean:dev",
+    "clean:esm": "gulp clean:esm",
+    "clean:pro": "gulp clean:pro",
+    "check-src": "eslint -c .eslintrc.js src/** -o test/src-err.log",
+    "check-lib": "eslint -c .eslintrc.js lib/** -o test/lib-err.log",
+    "fixup-src": "eslint -c .eslintrc.js src/** --fix -o test/src-err.log",
+    "fixup-lib": "eslint -c .eslintrc.js lib/** --fix -o test/lib-err.log",
+    "test": "npm run check-src && npm run build"
+  },
+  "license": "MIT",
+  "main": "src/app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orcunsaltik/bro-jq.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orcunsaltik/bro-jq/issues"
+  },
+  "homepage": "https://github.com/orcunsaltik/bro-jq#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint": "^7.3.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-rollup-2": "^1.0.8",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-json": "^4.1.0"
+  },
+  "author": "Orçun Saltık <saltikorcun@gmail.com>"
+}
