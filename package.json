@@ -1,6 +1,6 @@
 {
   "name": "bro-jq",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Javascript Library like jQuery",
   "keywords": [
     "dom",
