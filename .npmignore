@@ -1,0 +1,12 @@
+# Dist
+
+!/dist
+
+.eslintignore
+.eslintrc.json
+
+/.editorconfig
+/.gitattributes
+
+/lib
+/gulpfile.js

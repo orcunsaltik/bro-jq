@@ -1,6 +1,6 @@
 {
   "name": "bro-jq",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Javascript Library like jQuery",
   "keywords": [
     "dom",
@@ -28,7 +28,6 @@
     "test": "npm run check-src && npm run build"
   },
   "license": "MIT",
-  "main": "src/app.js",
   "directories": {
     "lib": "lib",
     "test": "test"
