@@ -4,6 +4,7 @@
 
 .eslintignore
 .eslintrc.json
+.eslintrc.js
 
 /.editorconfig
 /.gitattributes
