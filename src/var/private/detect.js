@@ -1,6 +1,6 @@
 import { doc } from './window';
 
-const styleObj = document.createElement('div').style;
+const styleObj = doc.createElement('div').style;
 const styleFix = ['Webkit', 'Moz', 'Ms'];
 
 export { styleObj, styleFix };
