@@ -1,4 +1,3 @@
-import noop   from '../../method/public/function/noop';
 import window from './root';
 
 const Fn  = Function;
