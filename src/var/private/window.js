@@ -1,3 +1,4 @@
+import noop   from '../../method/public/function/noop';
 import window from './root';
 
 const Fn  = Function;
@@ -19,6 +20,10 @@ const ci  = window.clearInterval;
 const doc           = !!window.document     ?     window.document : {};
 const docEl         = !!doc.documentElement ? doc.documentElement : {};
 const DocumentTouch = window.DocumentTouch;
+const createElement = !!doc.createElement ? doc.createElement : function () {
+    return { style: {} };
+};
+const navigator = 'navigator' in window && window.navigator;
 
 const _keys = Obj.keys;
 const _concat  = __A.concat;
@@ -35,5 +40,5 @@ export {
     gcs, raf, caf, sto, cto, si, ci,
     _concat, _filter, _indexOf, _slice, _splice, _keys,
     hasOwn, toString, parseFloat,
-    parseInt, isNaN, doc, docEl, DocumentTouch
+    parseInt, isNaN, doc, docEl, DocumentTouch, createElement, navigator
 };
