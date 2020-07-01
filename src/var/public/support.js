@@ -1,6 +1,6 @@
 import window from '../private/root';
 import { animation, transition }         from './style';
-import { doc, DocumentTouch } from '../private/window';
+import { doc, DocumentTouch, navigator } from '../private/window';
 
 const Support = {
            touch: !!(!!navigator && navigator.maxTouchPoints > 0 || 'ontouchstart' in window || (DocumentTouch && doc instanceof DocumentTouch)) && 'touch',
