@@ -1,37 +1,25 @@
-import {
-    Function,
-    String,
-    Object,
-    Array,
-    Number,
-    getComputedStyle,
-    requestAnimationFrame,
-    cancelAnimationFrame,
-    setTimeout,
-    clearTimeout,
-    setInterval,
-    clearInterval,
-    document,
-    DocumentTouch,
-    navigator
-} from 'window';
+import window from './root';
 
-const Fn = Function;
+const Fn  = Function;
 const Obj = Object;
 const Arr = Array;
 const Str = String;
 const Num = Number;
 const __A = Arr.prototype;
 const __O = Obj.prototype;
-const doc = document;
-const docEl = doc.documentElement;
-const gcs = getComputedStyle;
-const raf = requestAnimationFrame;
-const caf = cancelAnimationFrame;
-const sto = setTimeout;
-const cto = clearTimeout;
-const si = setInterval;
-const ci = clearInterval;
+
+const gcs = window.getComputedStyle;
+const raf = window.requestAnimationFrame;
+const caf = window.cancelAnimationFrame;
+const sto = window.setTimeout;
+const cto = window.clearTimeout;
+const si  = window.setInterval;
+const ci  = window.clearInterval;
+
+const doc           = !!window.document     ?     window.document : {};
+const docEl         = !!doc.documentElement ? doc.documentElement : {};
+const DocumentTouch = window.DocumentTouch;
+
 const _keys = Obj.keys;
 const _concat  = __A.concat;
 const _filter  = __A.filter;
@@ -47,5 +35,5 @@ export {
     gcs, raf, caf, sto, cto, si, ci,
     _concat, _filter, _indexOf, _slice, _splice, _keys,
     hasOwn, toString, parseFloat,
-    parseInt, isNaN, doc, docEl, navigator, DocumentTouch
+    parseInt, isNaN, doc, docEl, DocumentTouch
 };

@@ -1,4 +1,4 @@
-import window    from 'window';
+import window    from '../var/private/root';
 import { doc, _slice } from '../var/private/window';
 import Bro       from '../instance';
 import _contains from '../method/public/dom/contains';

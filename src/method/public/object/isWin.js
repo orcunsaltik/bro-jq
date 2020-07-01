@@ -1,3 +1,3 @@
-import window from 'window';
+import window from '../../../var/private/root';
 
 export default (obj) => !!obj && obj === window; 

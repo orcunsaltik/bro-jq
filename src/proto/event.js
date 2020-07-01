@@ -1,4 +1,4 @@
-import window from 'window';
+import window from '../var/private/root';
 import {
  animation, transition, animationDuration, transitionDuration, animationEnd, transitionEnd 
 } from '../var/public/style';

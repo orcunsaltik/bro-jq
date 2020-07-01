@@ -1,4 +1,4 @@
-import window   from 'window';
+import window   from '../var/private/root';
 import { doc }  from '../var/private/window';
 import Bro      from '../instance';
 import _isArr   from '../method/public/object/isArr';
